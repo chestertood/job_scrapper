@@ -1,0 +1,23 @@
+# secrets — never push
+.env
+
+# per-user login sessions (Playwright browser profiles) — each user logs in
+# themselves via the app's own Login button, this dir is never shared
+backend/chrome_profile*/
+
+# generated/local data, not source
+backend/__pycache__/
+backend/*.pyc
+backend/jobs.json
+backend/jobs.csv
+backend/logs/
+backend/debug_offer.png
+__pycache__/
+
+# build output / deps
+frontend/dist/
+frontend/node_modules/
+
+# editor/local settings
+.vscode/
+.claude/settings.local.json
